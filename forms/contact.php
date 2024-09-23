@@ -22,6 +22,8 @@
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
+  $contact->subject = $_POST['pay'];
+  $contact->subject = $_POST['select'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
@@ -36,6 +38,8 @@
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
+  $contact->add_message( $_POST['pay'], 'Pay');
+  $contact->add_message( $_POST['select'], 'Select');
 
   echo $contact->send();
 ?>

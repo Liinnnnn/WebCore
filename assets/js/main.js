@@ -239,24 +239,36 @@
       const servicesList = $('.services-list ')
       const services = $$('.services-list a') 
       const items = $$('.services-item')
+      const select = $('#pay-field')
       servicesList.addEventListener('click', (e)=>{
         if(e.target != servicesList){
           services.forEach(service => {
             if(service!= e.target){
               service.classList.remove('active')
-            }else 
+            }else
               service.classList.add('active')
+          
+            
           }) 
-  
-         for (let i = 0; i < services.length; i++) {
-            if(services[i].classList.contains('active')){
-              items[i].classList.remove('d-none')
-            }else {
-              items[i].classList.add('d-none')
-            }
-         } 
+        }
+        
+        for (let index = 0; index < services.length; index++) {
+          if(e.target != servicesList){
+            const element = items[index];
+            if(services[index] == e.target){
+              element.classList.remove('d-none')
+            }else element.classList.add('d-none')
+          }
+        }
+      })
+      select.addEventListener('change', (e)=>{
+        e.stopPropagation();
+        if(e.target.value == 'online'){
+          $('.pay-img').style.display = 'block'
         }
       })
   }
   window.addEventListener('load', activeService);
+
+
 })();

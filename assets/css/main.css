@@ -1391,6 +1391,12 @@ section,
   border-bottom: 3px solid var(--accent-color);
 }
 
+.php-email-form .btn-send {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 4px;
+}
+
 @media (max-width: 575px) {
   .contact .php-email-form {
     padding: 20px;
@@ -1562,6 +1568,9 @@ section,
   color: var(--accent-color);
 }
 
+.services-holder{
+  animation: all 0.5s;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/

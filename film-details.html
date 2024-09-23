@@ -139,17 +139,60 @@
                 Câu chuyện phim là dị bản kinh dị đẫm máu lấy cảm hứng từ truyện cổ tích nổi tiếng Tấm Cám, nội dung chính của phim xoay quanh Cám - em gái cùng cha khác mẹ của Tấm đồng thời sẽ có nhiều nhân vật và chi tiết sáng tạo, gợi cảm giác vừa lạ vừa quen cho khán giả..
               </p>
             </div>
-            <div class="service-item">
+            <div class="services-item d-none">
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+                  <div class="col-md-12">
+                    <label for="name-field" class="pb-2">Tên</label>
+                    <input type="text" name="name" id="name-field" class="form-control" required="">
+                  </div>
+                  
+                  <div class="col-md-12">
+                    <label for="email-field" class="pb-2">Email</label>
+                    <input type="email" name="email" id="email-field" class="form-control" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="subject-field" class="pb-2">Số lượng vé</label>
+                    <input type="number" inputmode="numeric" class="form-control" name="subject" id="subject-field" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="pay-field" class="pb-2">Phương thức thanh toán</label>
+                    <select value="" name="select" class="pb-2 services-select" id = "pay-field">
+                      <option value="">Chọn phương thức thanh toán</option>
+                      <option value="cod">Thanh toán tại quầy</option>
+                      <option value="online">Thanh toán trực tuyến</option>
+                    </select>
+                  </div>
+  
+                  <div class="offset-4 col-md-4">
+                    <img src="/assets/img/logo.png" class="img-fluid pay-img" style="display: none;" alt="">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Message</label>
+                    <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  </div>
+  
+                  <div class="col-md-12">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+  
+                    <button type="submit" class="btn-send">Send Message</button>
+                  </div>
+  
+                </div>
+              </form>
+            </div>
+            <div class="services-item d-none">
 
             </div>
-            <div class="service-item">
-              
+            <div class="services-item d-none">
+
             </div>
-            <div class="service-item">
-              
-            </div>
-            <div class="service-item">
-              
+            <div class="services-item d-none">
+
             </div>
           </div>
 
