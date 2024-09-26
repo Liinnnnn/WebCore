@@ -251,7 +251,7 @@
             
           }) 
         }
-        
+       
         for (let index = 0; index < services.length; index++) {
           if(e.target != servicesList){
             const element = items[index];
@@ -261,12 +261,7 @@
           }
         }
       })
-      select.addEventListener('change', (e)=>{
-        e.stopPropagation();
-        if(e.target.value == 'online'){
-          $('.pay-img').style.display = 'block'
-        }
-      })
+
   }
   window.addEventListener('load', activeService);
 
