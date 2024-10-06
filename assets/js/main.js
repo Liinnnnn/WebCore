@@ -235,6 +235,92 @@
   }
   window.addEventListener('load', switchDay);
 
- 
-
+  function render(){
+    const Film = {
+      films : [
+        {
+          title : 'Cám',
+          img : 'assets/img/film/tam.jpg',
+          status : 'Đang chiếu',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'ongoing'
+        },
+        {
+          title : 'Quỷ Án',
+          img : 'assets/img/film/media_images_2024_08_20_q-101323-200824-62.jpg',
+          status : 'Sắp chiếu',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'preview'
+        },
+        {
+          title : 'Transformer One',
+          img : 'assets/img/film/media_images_2024_09_11_tf1-intl-allspark-dgtl-online-payoff-keyart-vie-400x633-134254-110924-51.jpg',
+          status : 'Đặc biệt',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'special'
+        },        
+        {
+          title : 'Joker Điên có đôi',
+          img : 'assets/img/film/media_images_2024_09_19_482wx722h-162630-190924-83.jpg',
+          status : 'Đang chiếu',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'ongoing'
+        },
+        {
+          title : 'Venom',
+          img : 'assets/img/film/media_images_2024_09_19_screenshot-2024-09-19-150036-150139-190924-38.png',
+          status : 'Sắp chiếu',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'preview'
+        }, 
+        {
+          title : 'Latency',
+          img : 'assets/img/film/media_images_2024_09_19_screenshot-2024-09-19-154629-154714-190924-43.png',
+          status : 'Đặc biệt',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'special'
+        },
+        {
+          title : 'Shin : Cậu bé bút chì ',
+          img : 'assets/img/film/media_images_2024_08_01_38-400x633-182208-010824-97.png',
+          status : 'Đang chiếu',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'ongoing'
+        },
+        {
+          title : 'Đố anh bắt được em',
+          img : 'assets/img/film/da.png',
+          status : 'Sắp chiếu',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'preview'
+        },
+        {
+          title : 'Avenger: End Game',
+          img : 'assets/img/film/R.jpg',
+          status : 'Đặc biệt',
+          description : 'Lorem ipsum, dolor sit amet consectetur',
+          filter : 'special'
+        },
+        
+      ],
+      render : function(){
+        const html = this.films.map((film)=>{
+          return `<div class="col-lg-4 col-md-6 film-item isotope-item filter-${film.filter}">
+              <div class="film-content h-100">
+                <img src=${film.img} class="img-fluid " alt="">
+                <div class="film-info">
+                 <h4>${film.status}</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="${film.img}" title="${film.title}" data-gallery="film-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="film-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>`
+        })
+        $(".film-container").innerHTML = html.join('')
+      }
+    }
+    Film.render();
+  }
+  window.addEventListener('load', render);
 })();
