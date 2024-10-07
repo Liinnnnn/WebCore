@@ -1628,6 +1628,9 @@ section,
 .account-avatar__container {
   position: relative;
 }
+.account-avatar__container label {
+  width: 100%;
+}
 
 .account--change-avatar {
   position: absolute;
@@ -1648,7 +1651,8 @@ section,
   }
 
 .account-avatar {
-  width: 60%;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
   display: flex;
@@ -1673,7 +1677,7 @@ section,
   border: 2px var(--default-color) solid;
   padding: 16px 4px;
   border-radius: 4px;
-  height: 600px;
+  height: 200px;
 }
 
 .account-menu a.active {
@@ -1722,6 +1726,6 @@ section,
   opacity: 0.8;
 }
 
-  .noti-warn:hover p, .noti-warn:hover h5 {
-      color: var(--accent-color);
-  }
+.noti-warn:hover p, .noti-warn:hover h5 {
+ color: var(--accent-color);
+}
