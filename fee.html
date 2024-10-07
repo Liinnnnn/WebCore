@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>cinema Details - Ninestars Bootstrap Template</title>
+  <title>Starter Page - Ninestars Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/SP.png" rel="icon">
-  <link href="assets/img/SP.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="cinema-details-page">
+<body class="starter-page-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -53,10 +53,9 @@
           <li><a href="index.html#about">Rạp</a></li>
           <li><a href="index.html#services">Giá vé</a></li>
           <li><a href="index.html#film">Phim</a></li>
-          <li><a href="index.html#team">Nhóm</a></li>
           <li><a class="btn-primary" href="">Đăng nhập</a></li>
           <li><a class="btn-register" href="">Đăng kí</a></li>
-          <li class="dropdown"><a href="#"><span>Phim</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li class="dropdown"><a href="#"><span>Phim</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Phim sắp chiếu</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -71,7 +70,7 @@
               <li><a href="#">Phim đang chiếu</a></li>
               <li><a href="#">Phim có suất đặc biệt</a></li>
             </ul>
-          </li>
+          </li> -->
           <!-- <li><a href="index.html#contact">Contact</a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -85,91 +84,35 @@
       
     </div>
   </header>
-
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Rạp phim</h1>
+        <h1 class="mb-2 mb-lg-0">Phim</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Trang chủ</a></li>
-            <li class="current">Rạp phim</li>
+            <li class="current">Phim</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- cinema Details Section -->
-    <section id="cinema-details" class="cinema-details section">
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+        <div class=" section-title " data-aos="fade-up">
+          <h2>Bảng giá vé hiện hành </h2>
+        </div>  
+      
+      <!-- Section Title -->
+      <!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="cinema-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide cinem-slider">
-                  <h3 class="cinema-name">Rạp Cầu Diễn</h3>
-                  <img src="assets/img/about/OIP.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide cinem-slider">
-                  <h3 class="cinema-name">Rạp Cầu Giấy</h3>
-                  <img src="assets/img/About/2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide cinem-slider">
-                  <h3 class="cinema-name">Rạp Giải Phóng</h3>
-                  <img src="assets/img/About/3.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="cinema-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Thông tin cơ bản</h3>
-              <ul>
-                <li><strong>Chất lượng công chiếu</strong>: HD+</li>
-                <li><strong>Đối tác</strong>: IMAX,imdb</li>
-                <li><strong>Ngày khai trương</strong>: ngày 3 tháng 10, 2024</li>
-              </ul>
-            </div>
-            <div class="cinema-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Đem đến trải nhiêm điện ảnh chưa từng có</h2>
-              <p>
-                Rạp phim của chúng tôi luôn cung cấp tất cả các dịch vụ điện ảnh một cách hoàn mỹ nhất , đem lại trải nhiệm khó quên cho khách hàng.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
+      <div class="container" data-aos="fade-up">
+          <div class="fee-img"></div>
       </div>
 
-    </section><!-- /cinema Details Section -->
+    </section><!-- /Starter Section Section -->
 
   </main>
 

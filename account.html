@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>cinema Details - Ninestars Bootstrap Template</title>
+  <title>Mua vé xem phim tại - SkoPe</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="cinema-details-page">
+<body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -49,17 +49,16 @@
 
       <nav id="navmenu" class="navmenu ">
         <ul>
-          <!-- <li><a href="index.html#hero" class="active">Trang chủ</a></li> -->
+          <li><a href="index.html#hero" class="active">Trang chủ</a></li>
           <li><a href="index.html#about">Rạp</a></li>
           <li><a href="index.html#services">Giá vé</a></li>
           <li><a href="index.html#film">Phim</a></li>
-          <li><a href="index.html#team">Nhóm</a></li>
           <li><a class="btn-primary" href="">Đăng nhập</a></li>
           <li><a class="btn-register" href="">Đăng kí</a></li>
-          <li class="dropdown"><a href="#"><span>Phim</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown "><a href=""><img src="/assets/img/apple-touch-icon.png" class="account-img" alt="" srcset=""></a>
             <ul>
-              <li><a href="#">Phim sắp chiếu</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li><a href="#">Tài khoản</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
                   <li><a href="#">Deep Dropdown 2</a></li>
@@ -67,9 +66,8 @@
                   <li><a href="#">Deep Dropdown 4</a></li>
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Phim đang chiếu</a></li>
-              <li><a href="#">Phim có suất đặc biệt</a></li>
+              </li> -->
+              <li><a href="#">Đăng xuất</a></li>
             </ul>
           </li>
           <!-- <li><a href="index.html#contact">Contact</a></li> -->
@@ -78,8 +76,8 @@
       </nav>
 
       <div class="btn-holder d-flex ">
-        <a class="btn-primary btn-night"><i class="bi bi-moon-fill"></i></a>
-        <a class="btn-primary btn-day d-none"><i class="bi bi-brightness-high-fill"></i></a>
+        <a class="btn-primary btn-night"><i class="bi bi-moon-fill icon-night"></i></a>
+        <a class="btn-primary btn-day d-none"><i class="bi bi-brightness-high-fill icon-day"></i></a>
       </div>
       
       
@@ -88,88 +86,86 @@
 
   <main class="main">
 
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Rạp phim</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li class="current">Rạp phim</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- cinema Details Section -->
-    <section id="cinema-details" class="cinema-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="cinema-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide cinem-slider">
-                  <h3 class="cinema-name">Rạp Cầu Diễn</h3>
-                  <img src="assets/img/about/OIP.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide cinem-slider">
-                  <h3 class="cinema-name">Rạp Cầu Giấy</h3>
-                  <img src="assets/img/About/2.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide cinem-slider">
-                  <h3 class="cinema-name">Rạp Giải Phóng</h3>
-                  <img src="assets/img/About/3.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="cinema-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Thông tin cơ bản</h3>
-              <ul>
-                <li><strong>Chất lượng công chiếu</strong>: HD+</li>
-                <li><strong>Đối tác</strong>: IMAX,imdb</li>
-                <li><strong>Ngày khai trương</strong>: ngày 3 tháng 10, 2024</li>
-              </ul>
-            </div>
-            <div class="cinema-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Đem đến trải nhiêm điện ảnh chưa từng có</h2>
-              <p>
-                Rạp phim của chúng tôi luôn cung cấp tất cả các dịch vụ điện ảnh một cách hoàn mỹ nhất , đem lại trải nhiệm khó quên cho khách hàng.
-              </p>
-            </div>
-          </div>
-
+        <div class="container d-lg-flex justify-content-between align-items-center">
+          <h1 class="mb-2 mb-lg-0">Quản lí tài khoản</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Trang chủ</a></li>
+              <li class="current">Quản lí tài khoản</li>
+            </ol>
+          </nav>
         </div>
+    </div>
 
-      </div>
+    <section id="account-section">
+        <div class="container">
 
-    </section><!-- /cinema Details Section -->
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 account-info">
+                  
+                  <div class="account-menu" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#" class="active account-setting" >Thông tin tài khoản</a>
+                    <a href="#" class="account-setting">Thông báo</a>
+                    <a href="" class="logout">Đăng xuất </a>
+                 </div>
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 " data-aos="fade-up" data-aos-delay="300">
+                    <div class="account-details px-4 active" data-aos-delay="300">
+                        <form action="starter-page.html" method="post" class="email-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
+                              <div class="account-avatar__container col-md-12" data-aos="fade-up" data-aos-delay="300">
+                                <label for="file">
+                                  <img src="/assets/img/team/dinhngu.png"  class="account-avatar" alt="  ">
+                                </label>
+                                <div class="account--change-avatar">
+                                  <label for="file">Đổi ảnh đại diện</label>
+                                  <input type="file" name="file" id="file" onchange="imgLoader()">
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <label for="name-field" class="pb-2">Tên</label>
+                                <input type="text" name="name" id="name-field" value="Nguyễn Tuấn Linh" class="form-control" required="">
+                              </div>
+                              
+                              <div class="col-md-12">
+                                <label for="email-field" class="pb-2">Email</label>
+                                <input type="email" name="email" id="email-field" value="ngtualin20004@gm.com" class="form-control" required="">
+                              </div>
+            
+                              <div class="col-md-8 ">
+                                <label for="date-field" class="pb-2">Ngày Sinh</label>
+                                <input type="date" value="2004-04-18" max="2016-12-31" inputmode="numeric" class="form-control" name="date" id="date-field" required="">
+                              </div>
+            
+                              <div class="col-md-6">
+                                <label for="tel-field" class="pb-2">Số điện thoại</label>
+                                <input type="tel" name="tel" id="tel-field" value="0912312313" maxlength="12" pattern="[0-9]{10}" class="form-control" required="">
+                              </div>
+                
+                              <div class="col-md-3 offset-8 offset-lg-8">
+                                <button type="submit" class="btn-send pe-lg-4 ps-lg-4">Cập nhật</button>
+                              </div>
+              
+                            </div>
+                          </form>
+                    </div>
+                    <div class="account-details px-4 d-none acc-notification" data-aos-delay="300">
+                        <div class="notification noti-inform p-3">
+                            <h5>Thông báo !</h5>
+                            <p class="message">Đã đặt vé thành công , mời quý khách đến quầy để nhận vé</p>
+                        </div>
+                        <a class="notification noti-warn p-3" href="film-details.html">
+                            <h5>Hot<i class="bi bi-fire"></i></h5>
+                            <p class="message">Phim mới đã đến lên ngay kẻo muộn</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
   </main>
 
@@ -268,6 +264,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+  <script src="assets/js/account.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>

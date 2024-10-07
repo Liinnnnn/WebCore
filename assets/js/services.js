@@ -6,7 +6,6 @@
         const servicesList = $('.services-list ')
         const services = $$('.services-list a') 
         const items = $$('.services-item')
-        const select = $('#pay-field')
         servicesList.addEventListener('click', (e)=>{
           if(e.target != servicesList){
             services.forEach(service => {
