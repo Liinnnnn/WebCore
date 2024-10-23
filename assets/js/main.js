@@ -10,7 +10,6 @@
   "use strict";
   const $ = document.querySelector.bind(document);
   const $$ = document.querySelectorAll.bind(document);
-
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
@@ -313,6 +312,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="${film.img}" title="${film.title}" data-gallery="film-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="film-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="Admin.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>`

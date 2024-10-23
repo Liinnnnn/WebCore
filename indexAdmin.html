@@ -55,9 +55,9 @@
           <li><a href="index.html#film">Phim</a></li>
           <li><a class="btn-primary" href="">Đăng nhập</a></li>
           <li><a class="btn-register" href="">Đăng kí</a></li>
-          <li class="dropdown "><a href=""><img src="/assets/img/apple-touch-icon.png" class="account-img" alt="" srcset=""></a>
+          <li class="dropdown "><a href="/account.html"><img src="/assets/img/apple-touch-icon.png" class="account-img" alt="" srcset=""><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Tài khoản</a></li>
+              <li><a href="account.html">Tài khoản</a></li>
               <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
@@ -84,90 +84,154 @@
     </div>
   </header>
 
+  
   <main class="main">
 
-    <div class="page-title" data-aos="fade">
-        <div class="container d-lg-flex justify-content-between align-items-center">
-          <h1 class="mb-2 mb-lg-0">Quản lí tài khoản</h1>
-          <nav class="breadcrumbs">
-            <ol>
-              <li><a href="index.html">Trang chủ</a></li>
-              <li class="current">Quản lí tài khoản</li>
-            </ol>
-          </nav>
-        </div>
-    </div>
+    <a href="/edit.html" class="active">Chỉnh sửa</a>
+  <!-- Hero Section -->
+    <section id="hero" class="section hero light-background">
 
-    <section id="account-section">
-        <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-4 col-md-4 col-sm-12 account-info">
-                  
-                  <div class="account-menu" data-aos="fade-up" data-aos-delay="300">
-                    <a href="#" class="active account-setting" >Thông tin tài khoản</a>
-                    <a href="#" class="account-setting">Thông báo</a>
-                    <a href="" class="logout">Đăng xuất </a>
-                 </div>
-                </div>
-
-                <div class="col-lg-8 col-md-8 col-sm-12 " data-aos="fade-up" data-aos-delay="300">
-                    <div class="account-details px-4 active" data-aos-delay="300">
-                        <form action="starter-page.html" method="post" class="email-form" data-aos="fade-up" data-aos-delay="200">
-                            <div class="row gy-4">
-                              <div class="account-avatar__container col-md-12" data-aos="fade-up" data-aos-delay="300">
-                                <div class="avatar-holder">
-                                  <label for="file">
-                                    <img src="/assets/img/team/dinhngu.png"  class="account-avatar" alt="  ">
-                                  </label>
-                                </div>
-                                <div class="account--change-avatar">
-                                  <label for="file">Đổi ảnh đại diện</label>
-                                  <input type="file" name="file" id="file" onchange="imgLoader()">
-                                </div>
-                              </div>
-                              <div class="col-md-12">
-                                <label for="name-field" class="pb-2">Tên</label>
-                                <input type="text" name="name" id="name-field" value="Nguyễn Tuấn Linh" class="form-control" required="">
-                              </div>
-                              
-                              <div class="col-md-12">
-                                <label for="email-field" class="pb-2">Email</label>
-                                <input type="email" name="email" id="email-field" value="ngtualin20004@gm.com" class="form-control" required="">
-                              </div>
-            
-                              <div class="col-md-8 ">
-                                <label for="date-field" class="pb-2">Ngày Sinh</label>
-                                <input type="date" value="2004-04-18" max="2016-12-31" inputmode="numeric" class="form-control" name="date" id="date-field" required="">
-                              </div>
-            
-                              <div class="col-md-6">
-                                <label for="tel-field" class="pb-2">Số điện thoại</label>
-                                <input type="tel" name="tel" id="tel-field" value="0912312313" maxlength="12" pattern="[0-9]{10}" class="form-control" required="">
-                              </div>
-                
-                              <div class="col-md-3 offset-8 offset-lg-8">
-                                <button type="submit" class="btn-send pe-lg-4 ps-lg-4">Cập nhật</button>
-                              </div>
-              
-                            </div>
-                          </form>
-                    </div>
-                    <div class="account-details px-4 d-none acc-notification" data-aos-delay="300">
-                        <div class="notification noti-inform p-3">
-                            <h5>Thông báo !</h5>
-                            <p class="message">Đã đặt vé thành công , mời quý khách đến quầy để nhận vé</p>
-                        </div>
-                        <a class="notification noti-warn p-3" href="film-details.html">
-                            <h5>Hot<i class="bi bi-fire"></i></h5>
-                            <p class="message">Phim mới đã đến lên ngay kẻo muộn</p>
-                        </a>
-                    </div>
-                </div>
+      <div class="container" >
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="fade-up">
+            <h1>Trải nghiệm xem phim mới lạ </h1>
+            <p>Độc nhất , chưa từng có với màn hình full 4k , âm thanh sắc nét</p>
+            <div class="d-flex">
+              <a href="#film" class="btn-primary">Mua vé ngay !</a>
+              <a href="https://youtu.be/_OKAwz2MsJs?si=DiD1_s4ay0sBKEyP" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Xem trailer</span></a>
             </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img " data-aos="zoom-out" data-aos-delay="200">
+            <p class="text-center ">Phim của tháng! <i class="bi bi-snow"></i></p>
+            <img src="assets/img/anh-mo-ta (1).png" class="img-fluid animated hero-bx" alt="">
+          </div>
         </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+
+      <div class="container">
+        <div class="container section-title" data-aos="fade-up">
+           <h2>Rạp phim </h2>
+        </div>
+        <div class="row gy-3">
+          <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+              <a href="/cinema-details.html" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
+                  <h3 class="text-center">Rạp Cầu Diễn</h3>
+                  <img src="/assets/img/About/OIP.jpg" class="about-img" alt="">
+                  <p>Địa chỉ : Mai Dịch , gần Đại học Thương Mại </p>
+              </a>
+              <a href="/cinema-details.html" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
+                  <h3 class="text-center">Rạp Cầu Giấy</h3>
+                  <img src="/assets/img/About/2.jpg" class="about-img" alt="">
+                  <p>Địa chỉ : Xuân Thủy , ngay gần Đại học Quốc Gia Hà Nội</p>
+              </a>
+              <a href="/cinema-details.html" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
+                  <h3 class="text-center">Rạp Giải Phóng</h3>
+                  <img src="/assets/img/About/3.jpg" class="about-img" alt="">
+                  <p>Địa chỉ : Giải Phóng , gần Đại học Bách khoa Hà Nội </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </section>
+    <!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Giá vé </h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-flag"></i></div>
+              <h4>Ngày lễ</a></h4>
+              <p>Trẻ em : 50.000đ</p>
+              <p>Học sinh - sinh viên : 75.000đ</p>
+              <p>Người lớn : 95.000đ</p>
+              <p>Có khuyến mãi tới 40% khi mua bỏng nước</p>
+            </div>
+          </div>
+          <div class=" col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar-week"></i></div>
+              <h4>Ngày thường</a></h4>
+              <p>Trẻ em : 40.000đ</p>
+              <p>Học sinh - sinh viên : 60.000đ</p>
+              <p>Người lớn : 85.000đ</p>
+            </div>
+           </div><!-- End Service Item -->
+          
+
+          <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-award"></i></div>
+              <h4>Suất chiếu sớm</a></h4>
+              <p>Trẻ em : 75.000đ</p>
+              <p>Học sinh - sinh viên : 100.000đ</p>
+              <p>Người lớn : 125.000đ</p>
+              <p>Free bỏng nước</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- film Section -->
+    <section id="film" class="film section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Phim</h2>
+        <p><i class="bi bi-balloon-fill"></i> Mùa phim thu đông T10 - T12 <i class="bi bi-balloon-fill"></i> </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="film-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">Tất cả phim</li>
+            <li data-filter=".filter-ongoing">Phim đang chiếu</li>
+            <li data-filter=".filter-preview">Phim sắp chiếu</li>
+            <li data-filter=".filter-special">Suất đặc biệt</li>
+          </ul>
+          <!-- End film Filters -->
+
+          <div class="row gy-4 isotope-container film-container" data-aos="fade-up" data-aos-delay="200">
+
+          </div><!-- End film Container -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /film Section -->
+
+    <!-- Faq Section -->
+    
+   
+
+    <!-- Team Section -->
+
 
   </main>
 
@@ -266,7 +330,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script src="assets/js/account.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
