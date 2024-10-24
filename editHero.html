@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa</title>
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <a href="/indexAdmin.html">Trở lại</a>
+    <div class="container">
+        <h1>Chỉnh sửa phim tiêu đề </h1>
+        <form action="/editFilm" method="POST">
+            <label for="trailer">Trailer:</label>
+            <input type="text" id="trailer" name="trailer" value="https://youtu.be/_OKAwz2MsJs?si=DiD1_s4ay0sBKEyP">
+            <br><br>
+            <label for="title">Tiêu đề :</label>
+            <input type="text" id="title" name="title" value="Phim của tháng ! ">
+            <br><br>
+            <label for="image">Ảnh chính : </label>
+            <input type="file" id="image" name="image">
+            <br><br>
+            <button type="submit">Lưu</button>
+            <button type="submit">Làm lại</button>
+        </form>
+    </div>
+    <script src="/assets/js/edit.js"></script>
+</body>
+</html>

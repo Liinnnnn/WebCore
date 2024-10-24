@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa</title>
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <a href="/indexAdmin.html">Trở lại</a>
+    <div class="container">
+        <h1>Chỉnh sửa rạp phim</h1>
+        <form action="/editFilm" method="POST">
+            <img src="/assets/img/About/OIP.jpg" alt="">
+            <br><br>
+            <label for="Image">Ảnh rạp Phim:</label>
+            <input type="file" id="Image" name="Image" value="/assets/img/About/OIP.jpg">
+            <br><br>
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" name="address" value="Địa chỉ : Mai Dịch , gần Đại học Thương Mại ">
+            <br><br>
+            <button type="submit">Lưu</button>
+            <button type="submit">Làm lại</button>
+        </form>
+    </div>
+    <script src="/assets/js/edit.js"></script>
+</body>
+</html>

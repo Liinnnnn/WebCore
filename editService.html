@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa</title>
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <a href="/indexAdmin.html">Trở lại</a>
+    <div class="container">
+        <h1>Chỉnh sửa giá vé</h1>
+        <div class="form-holder" style="display: flex;justify-content: space-around;">
+            <form action="/editFilm" method="POST">
+                <h2>Ngày lễ</h2>
+                <br><br>
+                <label>Trẻ em:</label>
+                <input type="text" name="children" value="50.000">
+                <br><br>
+                <label>Người lớn:</label>
+                <input type="text" name="adult" value="85.000">
+                <br><br>
+                <label >Học sinh - sinh viên : </label>
+                <input type="text" name="puppy" value="95.000">
+                <br><br>
+                <label >Khuyến mãi : </label>
+                <input type="text" name="discount" value="40">
+                <br><br>
+                <button type="submit">Lưu</button>
+                <button type="submit">Làm lại</button>
+            </form>
+            <form action="/editFilm" method="POST">
+                <h2>Ngày thường</h2>
+                <br><br>
+                <label >Trẻ em: </label>
+                <input type="text" name="children" value="40.000">
+                <br><br>
+                <label>Người lớn:</label>
+                <input type="text" name="adult" value="85.000">
+                <br><br>
+                <label >Học sinh - sinh viên : </label>
+                <input type="text" name="puppy" value="60.000">
+                <br><br>    
+                <button type="submit">Lưu</button>
+                <button type="submit">Làm lại</button>
+            </form> 
+            <form action="/editFilm" method="POST">
+                <h2>Suất đặc biệt</h2>
+                <br><br>
+                <label >Trẻ em: </label>
+                <input type="text" name="children" value="70.000">
+                <br><br>
+                <label>Người lớn:</label>
+                <input type="text" name="adult" value="125.000">
+                <br><br>
+                <label >Học sinh - sinh viên : </label>
+                <input type="text" name="puppy" value="100.000">
+                <br><br>
+                <button type="submit">Lưu</button>
+                <button type="submit">Làm lại</button>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/js/edit.js"></script>
+</body>
+</html>

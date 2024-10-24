@@ -311,8 +311,8 @@
                  <h4>${film.status}</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="${film.img}" title="${film.title}" data-gallery="film-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="film-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  <a href="Admin.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="editFilm.html" title="More Details" class="details-link"><i class="bi bi-gear"></i></a>
+                  
                 </div>
               </div>
             </div>`
