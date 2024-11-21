@@ -1119,7 +1119,8 @@ section,
 }
 
 .film .film-content .film-info .preview-link,
-.film .film-content .film-info .details-link {
+.film .film-content .film-info .details-link,
+.film .film-content .film-info .details-link2 {
   position: absolute;
   left: calc(50% - 40px);
   font-size: 26px;
@@ -1130,7 +1131,8 @@ section,
 }
 
 .film .film-content .film-info .preview-link:hover,
-.film .film-content .film-info .details-link:hover {
+.film .film-content .film-info .details-link:hover,
+.film .film-content .film-info .details-link2:hover {
   color: var(--accent-color);
 }
 
@@ -1139,7 +1141,11 @@ section,
   font-size: 34px;
   line-height: 0;
 }
-
+.film .film-content .film-info .details-link2{
+  left: calc(60% + 12px);
+  font-size: 34px;
+  line-height: 0;
+}
 .film .film-content:hover .film-info {
   opacity: 1;
 }
@@ -1426,7 +1432,11 @@ section,
   color: var(--contrast-color);
   padding: 4px;
 }
-
+.btn-send {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 4px;
+}
 @media (max-width: 575px) {
   .contact .email-form {
     padding: 20px;

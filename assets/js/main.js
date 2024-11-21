@@ -308,10 +308,11 @@
               <div class="film-content h-100">
                 <img src=${film.img} class="img-fluid " alt="">
                 <div class="film-info">
-                 <h4>${film.status}</h4>
+                  <h4>${film.status}</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="${film.img}" title="${film.title}" data-gallery="film-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="editFilm.html" title="More Details" class="details-link"><i class="bi bi-gear"></i></a>
+                  <a href="editFilm.html" title="More Details" class="details-link2"><i class="bi bi-gear"></i></a>
                   
                 </div>
               </div>

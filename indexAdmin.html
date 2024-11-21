@@ -120,17 +120,17 @@
         <div class="row gy-3">
           <div class="col-lg-12 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="row">
-              <a href="/cinema-details.html" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
+              <a href="" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
                   <h3 class="text-center">Rạp Cầu Diễn</h3>
                   <img src="/assets/img/About/OIP.jpg" class="about-img" alt="">
                   <p>Địa chỉ : Mai Dịch , gần Đại học Thương Mại </p>
               </a>
-              <a href="/cinema-details.html" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
+              <a href="" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
                   <h3 class="text-center">Rạp Cầu Giấy</h3>
                   <img src="/assets/img/About/2.jpg" class="about-img" alt="">
                   <p>Địa chỉ : Xuân Thủy , ngay gần Đại học Quốc Gia Hà Nội</p>
               </a>
-              <a href="/cinema-details.html" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
+              <a href="" class="col-lg-4 col-md-6 text-center about-content ps-0 ps-lg-3">
                   <h3 class="text-center">Rạp Giải Phóng</h3>
                   <img src="/assets/img/About/3.jpg" class="about-img" alt="">
                   <p>Địa chỉ : Giải Phóng , gần Đại học Bách khoa Hà Nội </p>
@@ -310,7 +310,15 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="/assets/js/edit.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+  <script>
+    const content = document.querySelectorAll(".about-content")
+    for(var s in content) {
+      s.onclick = function(e){
+        e.PreventDefault()
+      }
+    }
+    
+  </script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
